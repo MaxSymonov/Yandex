@@ -17,8 +17,8 @@ public class SearchHelper extends HelperBase {
         click(By.xpath("//div[@role='tablist']//div[7]"));
         click(By.xpath("//ul[@data-autotest-id='subItems']//li[3]"));
         click(By.xpath("//div[@data-zone-name='all-filters-button']//span[1]"));
-        waitAndType(By.xpath("//input[@placeholder='187']"), search.getPriceFrom());
-        waitAndType(By.xpath("//input[@placeholder='508 338']"), search.getPriceTo());
+        waitAndType(By.xpath("//input[@placeholder='142']"), search.getPriceFrom());
+        waitAndType(By.xpath("//input[@placeholder='507 242']"), search.getPriceTo());
         WebElement element = wd.findElement(By.xpath("//*[@id='153043']/input[@tabindex='0']"));
 
         Actions actions = new Actions(wd);

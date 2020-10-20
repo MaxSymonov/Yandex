@@ -18,6 +18,9 @@ sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 dependencies {
+
+    compile "com.opencsv:opencsv:4.0"
+
     implementation('org.seleniumhq.selenium:selenium-java:3.141.59')
 
     testImplementation('org.testng:testng:7.1.0')
