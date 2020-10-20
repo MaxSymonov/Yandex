@@ -1,0 +1,14 @@
+ru/testing/yandex/framework/ApplicationManager.java
+ ru.testing.yandex.framework.ApplicationManager
+ru/testing/yandex/framework/HelperBase.java
+ ru.testing.yandex.framework.HelperBase
+ru/testing/yandex/tests/SearchTests.java
+ ru.testing.yandex.tests.SearchTests
+ru/testing/yandex/model/Search.java
+ ru.testing.yandex.model.Search
+ru/testing/yandex/tests/TestBase.java
+ ru.testing.yandex.tests.TestBase
+ru/testing/yandex/framework/SearchHelper.java
+ ru.testing.yandex.framework.SearchHelper
+ru/testing/yandex/tests/DataProviders.java
+ ru.testing.yandex.tests.DataProviders

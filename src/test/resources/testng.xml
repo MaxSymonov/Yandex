@@ -1,9 +1,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="RegressionTests" verbose="1" >
-    <test name="Regression" >
+<suite name="SearchTests" verbose="1" >
+    <test name="Search" >
         <classes>
-            <class name="ru.testing.yanex.tests.DataProviders" />
+            <class name="ru.testing.yandex.tests.SearchTests" />
         </classes>
     </test>
 </suite>

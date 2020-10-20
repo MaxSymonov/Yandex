@@ -3,7 +3,7 @@
 <suite name="SearchTests" verbose="1" >
     <test name="Search" >
         <classes>
-            <class name="ru.testing.yandex.tests.SearchTests" />
+            <class name="ru.testing.yandex.tests.DataProviders" />
         </classes>
     </test>
 </suite>
