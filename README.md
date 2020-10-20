@@ -1,2 +1,0 @@
-# Yandex
-Yandex Market testing

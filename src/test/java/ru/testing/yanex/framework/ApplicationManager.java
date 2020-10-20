@@ -2,6 +2,7 @@ package ru.testing.yanex.framework;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.BrowserType;
 
@@ -20,7 +21,7 @@ public class ApplicationManager {
 
     public void init() {
         if (browser.equals(BrowserType.EDGE)) {
-            wd = new ChromeDriver();
+            wd = new EdgeDriver();
         } else if (browser.equals(BrowserType.FIREFOX)) {
             wd = new FirefoxDriver();
         }

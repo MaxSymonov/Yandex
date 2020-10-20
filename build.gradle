@@ -29,15 +29,6 @@ task testYandex(type:Test) {
     }
 }
 
-task testTeam(type:Test) {
-    useTestNG {
-        suites 'src/test/resources/testng-team.xml'
-    }
-    if (project.hasProperty('browser')){
-        systemProperty 'browser', "${browser}"
-    }
-}
-
 compileJava.options.encoding = 'UTF-8'
 
 tasks.withType(JavaCompile) {

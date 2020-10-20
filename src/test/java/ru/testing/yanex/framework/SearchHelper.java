@@ -5,19 +5,20 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
+import ru.testing.yanex.model.Search;
 
 public class SearchHelper extends HelperBase {
     public SearchHelper(WebDriver wd) {
         super(wd);
     }
 
-    public void searchMarket() throws InterruptedException {
+    public void searchMarket(Search search) throws InterruptedException {
         switchToNewTab(By.xpath("//a[@data-id='market']"));
         click(By.xpath("//div[@role='tablist']//div[7]"));
         click(By.xpath("//ul[@data-autotest-id='subItems']//li[3]"));
         click(By.xpath("//div[@data-zone-name='all-filters-button']//span[1]"));
-        waitAndType(By.xpath("//input[@placeholder='187']"), "20000");
-        waitAndType(By.xpath("//input[@placeholder='508 338']"), "35000");
+        waitAndType(By.xpath("//input[@placeholder='187']"), search.getPriceFrom());
+        waitAndType(By.xpath("//input[@placeholder='508 338']"), search.getPriceTo());
         WebElement element = wd.findElement(By.xpath("//*[@id='153043']/input[@tabindex='0']"));
 
         Actions actions = new Actions(wd);
